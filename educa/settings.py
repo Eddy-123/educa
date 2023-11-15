@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'redisboard',
     'rest_framework',
+    'chat',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -159,3 +161,4 @@ REST_FRAMEWORK = {
     ]
 }
 
+ASGI_APPLICATION = 'educa.asgi.application'
