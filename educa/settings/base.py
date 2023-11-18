@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-hoap9ym$8z0-2w-1^i$uj)zfu3(!35x_v+4hjush(3zvqidg9f'
+SECRET_KEY = 'adfsfsadfsdffdsdafsdfdfhoap9ym$8z0-2w-1^i$uj)zfu3(!35x_v+4hjush(3zvqidg9f'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
@@ -59,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'courses.middleware.subdomain_course_middleware',
 ]
 
 ROOT_URLCONF = 'educa.urls'
@@ -165,3 +166,5 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
