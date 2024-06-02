@@ -87,6 +87,7 @@ __pycache__/
 local_settings.py
 
 .env
+.educa/
 db.sqlite3
 .vscode/
 media/
